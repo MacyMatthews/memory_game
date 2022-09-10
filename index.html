@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Memory Game!</h1>
+        <h2>Welcome to the memory game! Click on two different cards to flip them <br>
+             and see if they match. If they don't match, flip over two different cards. <br>
+             Continue until all cards have been matched. Refresh to start a new game.</h2>
+        <div class="cards">
+            <div class="card" animal="smiley">
+              <img src="https://cdn10.bostonmagazine.com/wp-content/uploads/sites/2/2015/10/Mr-768x768.jpg" alt="" />
+            </div>
+            <div class="card" animal="sad">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWiok15164vAz1UNj7jxlH90mG5y-odBzW7g&usqp=CAU" alt="" />
+            </div>
+            <div class="card" animal="straight">
+              <img src="https://www.nicepng.com/png/detail/13-131911_straight-face-emoticon-smiley.png" alt="" />
+            </div>
+            <div class="card" animal="exc">
+              <img src="https://i.pinimg.com/736x/61/88/33/6188339bc9afa582cfa662129b735ed6--emoji-faces-smiley-faces.jpg" alt="" />
+            </div>
+            <div class="card" animal="surprised">
+              <img src="https://p.kindpng.com/picc/s/494-4948722_image-png-khan-academy-wiki-fandom-powered-surprise.png
+        " alt="" />
+            </div>
+            <div class="card" animal="scared">
+              <img src="data:image/png;base64,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" alt="" />
+            </div>
+            <div class="card" animal="smiley">
+              <img src="https://cdn10.bostonmagazine.com/wp-content/uploads/sites/2/2015/10/Mr-768x768.jpg" alt="" />
+            </div>
+            <div class="card" animal="straight">
+              <img src="https://www.nicepng.com/png/detail/13-131911_straight-face-emoticon-smiley.png" alt="" />
+            </div>
+            <div class="card" animal="surprised">
+              <img src="https://p.kindpng.com/picc/s/494-4948722_image-png-khan-academy-wiki-fandom-powered-surprise.png
+        " alt="" />
+            </div>
+            <div class="card" animal="sad">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRWiok15164vAz1UNj7jxlH90mG5y-odBzW7g&usqp=CAU" alt="" />
+            </div>
+            <div class="card" animal="scared">
+              <img src="data:image/png;base64,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" alt="" />
+            </div>
+            <div class="card" animal="big-smiley">
+              <img src="https://www.kindpng.com/picc/m/47-474423_transparent-smile-emoji-png-funny-face-emoji-png.png" alt="" />
+            </div>
+            <div class="card" animal="exc">
+              <img src="https://i.pinimg.com/736x/61/88/33/6188339bc9afa582cfa662129b735ed6--emoji-faces-smiley-faces.jpg" alt="" />
+            </div>
+            <div class="card" animal="tear">
+              <img src="https://www.dictionary.com/e/wp-content/uploads/2018/08/crying-face-emoji.png" alt="" />
+            </div>
+            <div class="card" animal="tear">
+              <img src="https://www.dictionary.com/e/wp-content/uploads/2018/08/crying-face-emoji.png" alt="" />
+            </div>
+            <div class="card" animal="big-smiley">
+              <img src="https://www.kindpng.com/picc/m/47-474423_transparent-smile-emoji-png-funny-face-emoji-png.png" alt="" />
+            </div>
+          </div>
+        </div>
+        <script>
+
+        let counter = 0;
+        let firstSelection = "";
+        let secondSelection = "";
+
+        const cards = document.querySelectorAll(".cards .card");
+        cards.forEach((card) => {
+        card.addEventListener("click", () => {
+        card.classList.add("clicked");
+
+        if (counter === 0) {
+            firstSelection = card.getAttribute("animal");
+            counter++;
+        } else {
+            secondSelection = card.getAttribute("animal");
+            counter = 0;
+
+      if (firstSelection === secondSelection) {
+        const correctCards = document.querySelectorAll(
+          ".card[animal='" + firstSelection + "']"
+        );
+
+        correctCards[0].classList.add("checked");
+        correctCards[0].classList.remove("clicked");
+        correctCards[1].classList.add("checked");
+        correctCards[1].classList.remove("clicked");
+      } else {
+        const incorrectCards = document.querySelectorAll(".card.clicked");
+
+        incorrectCards[0].classList.add("shake");
+        incorrectCards[1].classList.add("shake");
+
+        setTimeout(() => {
+          incorrectCards[0].classList.remove("shake");
+          incorrectCards[0].classList.remove("clicked");
+          incorrectCards[1].classList.remove("shake");
+          incorrectCards[1].classList.remove("clicked");
+        }, 800);
+      }
+    }
+  });
+});
+
+        </script>
+</body>
+</html>
